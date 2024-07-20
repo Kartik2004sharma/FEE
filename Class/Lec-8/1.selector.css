@@ -1,0 +1,31 @@
+/* universal selctor */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* attribute selector */
+input[type = text]{
+    background-color: red;
+}
+input[type = password]{
+    background-color: green;
+}
+/* element selctor */
+p{
+    background-color: pink;
+}
+/* class selector */
+.a1{
+    font-weight: 800;
+}
+
+/* id selector */
+#fruits{
+    background-color: lightcoral;
+}
+
+[placeholder ="Email"]{
+    background-color: pink;
+    width: 250px;
+    border-radius: 15px;
+    height: 50px;
+}
