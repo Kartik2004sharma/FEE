@@ -1,0 +1,11 @@
+/* Custom Styles */
+#hero {
+    background-image: url('9467585.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}

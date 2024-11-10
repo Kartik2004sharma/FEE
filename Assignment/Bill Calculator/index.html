@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Bill Calculator</h1>
+
+        
+        <div class="input-group">
+            <label for="item-cost">Cost of Items ($):</label>
+            <input type="number" id="item-cost" placeholder="Enter item cost" required>
+        </div>
+
+        
+        <div class="input-group">
+            <label for="tax-rate">Tax Rate (%):</label>
+            <input type="number" id="tax-rate" placeholder="Enter tax rate" required>
+        </div>
+
+        
+        <div class="input-group">
+            <label for="tip-percentage">Tip Percentage (%):</label>
+            <input type="number" id="tip-percentage" placeholder="Enter tip percentage" required>
+        </div>
+
+        
+        <button onclick="calculateBill()">Calculate Bill</button>
+
+        
+        <div id="output">
+            <p id="tax-amount"></p>
+            <p id="tip-amount"></p>
+            <p id="total-amount"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
