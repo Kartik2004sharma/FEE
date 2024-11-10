@@ -1,0 +1,170 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Input and button styling */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-list li {
+  padding: 12px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.todo-list li:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.todo-list li.completed {
+  background-color: #f1f9f1;
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
+
+.todo-list li.completed span {
+  color: #7a7a7a;
+}
+
+/* Task text */
+span {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+span:hover {
+  color: #007bff;
+}
+
+/* Remove button */
+.todo-list button {
+  background-color: #ff4d4d;
+  padding: 8px 15px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.todo-list button:hover {
+  background-color: #e60000;
+  transform: translateY(-2px);
+}
+
+.todo-list button:active {
+  transform: translateY(0);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button, .todo-list button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
